@@ -3,13 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>Fromhats proof-of-concept</title>
+    <style>
+      .hat{border:1px solid black;}
+      #sumarea{border:1px solid black;}
+      input[type="number"] { width: 3em;}
+    </style>
   </head>
   <body>
-    <div draggable="true">
-      
+    <div class="hat" draggable="true">
+      <div class="hattitle">Everything</div>
+      <input type="text">
+      <button type="button">Add a group</button>
     </div>
     <div id="sumarea">
-      
+      <form class="drawer">
+        Draw <input type="number" value='1' step = '1'> <button type="button">(to...)</button> from Everything
+      </form>
+      <form class="drawer">
+        Draw <input type="number" value='0' step = '1'> <button type="button">(to...)</button> from (drag hat here)
+      </form>
+      <button type="button">Go</button>
     </div>
+    <script>
+      function addContainer(div) {
+        
+      }
+      function addItem(div) {
+        
+      }
+    </script>
     </body>
 </html>
